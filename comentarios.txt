@@ -1,0 +1,10 @@
+recuerda que si vas a poner o eliminar comentarios que manengan la estructura 
+  /**
+   * @description
+   * Funcion para el login del usuario en la aplicacion.
+   * @param username {string} Nombre del usuario.
+   * @param password {string} Clave del usuario.
+   * @return {Observable<AutenticacionUsuarioModel>} Retorna objeto con datos de respuesta del proceso.
+   */
+
+no hay que poner comentarios inecesarios que no cumplan con esta estructura si hay comentarios que no cumplan con esta estructura eliminalos
