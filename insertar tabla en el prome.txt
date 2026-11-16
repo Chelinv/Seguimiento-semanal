@@ -1,0 +1,31 @@
+USE pr_notificacion
+GO
+
+IF NOT EXISTS (
+    SELECT TOP (1) sec_tabla
+    FROM pr_notificacion.dbo.no_secuencial_transaccion
+    WHERE sec_tabla = 'mp_mkp_redencion_millas'
+)
+BEGIN
+    INSERT pr_notificacion.dbo.no_secuencial_transaccion
+    VALUES ('mp_mkp_redencion_millas', 'pr_medios_pago', 'T');
+
+    PRINT 'Se inserta tabla pr_medios_pago..mp_mkp_redencion_millas';
+END
+ELSE
+    PRINT 'tabla ya ingresada mp_mkp_redencion_millas';
+
+IF NOT EXISTS (
+    SELECT TOP (1) sec_tabla
+    FROM pr_notificacion.dbo.no_secuencial_transaccion
+    WHERE sec_tabla = 'mp_mkp_redencion_millas_detalle'
+)
+BEGIN
+    INSERT pr_notificacion.dbo.no_secuencial_transaccion
+    VALUES ('mp_mkp_redencion_millas_detalle', 'pr_medios_pago', 'T');
+
+    PRINT 'Se inserta tabla pr_medios_pago..mp_mkp_redencion_millas_detalle';
+END
+ELSE
+    PRINT 'tabla ya ingresada mp_mkp_redencion_millas_detalle';
+GO

@@ -1,0 +1,19 @@
+Claves
+corptest\tcabezasbs
+believeSANTY,1997
+
+corptest\ttelloc
+C0f1ecsys03208.
+
+
+PIVOT
+corptest\tgex_velezc
+ProduBC1217cv2@19
+
+PROME TESTING:
+tvelezc
+ProB1217cv2@19
+
+FIGMA
+gex_velezc@produbanco.com
+Banco1217cv2@19
